@@ -54,3 +54,5 @@ toothbrush 100%/1%, battery-update, server-outage).
 | v | size / result | change |
 |---|---------------|--------|
 | v1 | entry 64 chars; main.ts writes it to /output/entry.txt | initial build: main.ts + README (3 live badges, 0 static badges) + LICENSE MIT + .makefun/owner.json |
+| v1-bundle | bundle-2-v1.tar.gz 191850 B, sha256 `161ec6fa47a03231fd83d1c2799efddff3eb172e51aa394e817513812dc9e8d0`; 1 session, 33 turns, 128 lines, 69/71 counted lines authored (97.1%) | first bundle needed --prompt-file prompt-2.txt --prompt-origin other (subagent session opens with a handoff, no person-typed prompt); 0 usage rows attached (subagent rows flush at run end — coordinator re-bundles) |
+| v1-check | check v1: 12 passed, 2 failed, 5 skipped, 5 at-submission | FAIL thinking_priced (0 usage rows — expected, see above); FAIL thinking_revised (no file revised yet) — fixed by this trial-log revision + commit, then re-bundle v2 + re-check |
